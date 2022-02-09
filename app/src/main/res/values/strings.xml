@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">klonen</string>
+    <string name="email">E - mail</string>
+    <string name="pass">Password</string>
+</resources>
