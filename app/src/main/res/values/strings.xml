@@ -1,5 +1,10 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">klonen</string>
     <string name="email">E - mail</string>
     <string name="pass">Password</string>
+    <string name="reg">Register Now</string>
+    <string name="no_account">"Don't have an account?"</string>
+    <string name="forget_pass" > Forget password? </string>
+    <string name="login">Login</string>
+    <string name="or">__ or __</string>
 </resources>
