@@ -71,18 +71,21 @@
                 android:textColorHint="#7e7e7e"
                 app:boxStrokeColor="#000"
 
+                app:errorEnabled="true"
 
 
 
-                app:layout_constraintDimensionRatio="1:0.195"
+                app:layout_constraintDimensionRatio="1:0.25"
                 app:layout_constraintEnd_toEndOf="@id/guideline6"
                 app:layout_constraintStart_toStartOf="@id/guideline5"
                 app:layout_constraintTop_toTopOf="@id/guideline7"
                 >
 
-                <com.google.android.material.textfield.TextInputEditText
+                <EditText
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
+
                     android:inputType="textEmailAddress"
                     />
 
@@ -102,18 +105,19 @@
                 android:textColorHint="#7e7e7e"
                 app:boxStrokeColor="#000"
 
+                app:errorEnabled="true"
 
 
-
-                app:layout_constraintDimensionRatio="1:0.195"
+                app:layout_constraintDimensionRatio="1:0.25"
                 app:layout_constraintEnd_toEndOf="@id/guideline6"
                 app:layout_constraintStart_toStartOf="@id/guideline5"
                 app:layout_constraintTop_toTopOf="@id/guideline8"
                 >
 
-                <com.google.android.material.textfield.TextInputEditText
+                <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
                     android:inputType="textPassword"
                     />
 
