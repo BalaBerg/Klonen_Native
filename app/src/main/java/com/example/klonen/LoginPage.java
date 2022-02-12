@@ -34,6 +34,8 @@ public class LoginPage extends AppCompatActivity {
            }
        });
 
+
+
     }
 
     private void initializeVariables(){
@@ -65,4 +67,14 @@ public class LoginPage extends AppCompatActivity {
         }
     }
 
+
+    public void signUp(View view) {
+        Intent intent = new Intent(LoginPage.this, Signup.class);
+        startActivity(intent);
+    }
+
+    public void newPass(View view) {
+        Intent intent = new Intent(LoginPage.this, Home.class);
+        startActivity(intent);
+    }
 }
