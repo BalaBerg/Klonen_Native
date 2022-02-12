@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int SPLASH_SCREEN = 5000; // 5 sec
     Animation sp_anim;
     ImageView splash_img;
-    private FirebaseAuth mauth;
+
 
 
     @Override
@@ -38,15 +38,18 @@ public class MainActivity extends AppCompatActivity {
 
         splash_img.setAnimation(sp_anim);
 
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
         // Switch to New Page : after the Timeout ( Delay )
         new Handler().postDelayed(() -> {
-            mauth = FirebaseAuth.getInstance();
-            FirebaseUser currentUser = mauth.getCurrentUser();
+
             if (currentUser != null){
                 startActivity(new Intent(MainActivity.this,Home.class));
+                finish();
             }
             else{
                 startActivity(new Intent(MainActivity.this,LoginPage.class));
+                finish();
             }// To avoid the splash screen.
         },SPLASH_SCREEN);
     }

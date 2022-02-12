@@ -1,5 +1,6 @@
 package com.example.klonen;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,7 +13,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginPage extends AppCompatActivity {
 
@@ -21,6 +28,9 @@ public class LoginPage extends AppCompatActivity {
     private EditText email, pass;
     private TextView forgot_pass, register;
     private Button login;
+
+    private FirebaseAuth mauth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +44,7 @@ public class LoginPage extends AppCompatActivity {
            public void onClick(View view) {
                 if(validate_credentials()){
                     Toast.makeText(LoginPage.this, "Validated", Toast.LENGTH_SHORT).show();
+                    login();
                 }
                 else{
                     Toast.makeText(LoginPage.this, "Something Wrong", Toast.LENGTH_SHORT).show();
@@ -57,21 +68,7 @@ public class LoginPage extends AppCompatActivity {
         login = findViewById(R.id.login);
     }
 
-    private void loginValidation(){
-        if(email.getText().toString().isEmpty()){
-            emailLayout.setError("This filed should not be empty!");
-        } else{
-            emailLayout.setErrorEnabled(false);        }
-        if(pass.getText().toString().isEmpty()){
-            passLayout.setError("This Field should not be empty!");
-        } else{
-            passLayout.setErrorEnabled(false);
-        }
-        if( (email.getText().toString().equals("admin")) && (pass.getText().toString().equals("1234")) ){
-            Intent intent = new Intent(LoginPage.this, Home.class);
-            startActivity(intent);
-        }
-    }
+
 
 
     private boolean validate_credentials(){
@@ -99,6 +96,44 @@ public class LoginPage extends AppCompatActivity {
             }
 
         }
+    }
+
+    private void login(){
+        String email_str = email.getText().toString();
+        String password = pass.getText().toString();
+
+        mauth = FirebaseAuth.getInstance();
+
+        mauth.signInWithEmailAndPassword(email_str,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    FirebaseUser user = mauth.getCurrentUser();
+                    assert user != null;
+                    String UUID = user.getUid();
+                    String DisplayName = user.getDisplayName();
+
+                    boolean emailVerified = user.isEmailVerified();
+
+                    if(emailVerified){
+                        startActivity(new Intent(LoginPage.this,Home.class));
+                    }else{
+                        Toast.makeText(LoginPage.this, "E-Mail not verified", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+
+
+                }else{
+                    Toast.makeText(LoginPage.this,String.valueOf(task.getException()), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+
+
     }
 
 }
