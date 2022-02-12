@@ -7,4 +7,6 @@
     <string name="forget_pass"> Forget password? </string>
     <string name="login">Login</string>
     <string name="or">__ or __</string>
+    <string name="submit">SUBMIT</string>
+    <string name="signout">SIGNOUT</string>
 </resources>

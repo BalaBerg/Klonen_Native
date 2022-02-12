@@ -11,6 +11,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+
 public class MainActivity extends AppCompatActivity {
 
     // for Animation :
@@ -34,11 +38,19 @@ public class MainActivity extends AppCompatActivity {
 
         splash_img.setAnimation(sp_anim);
 
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+
         // Switch to New Page : after the Timeout ( Delay )
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, LoginPage.class);
-            startActivity(intent);
-            finish(); // To avoid the splash screen.
+
+            if (currentUser != null){
+                startActivity(new Intent(MainActivity.this,Home.class));
+                finish();
+            }
+            else{
+                startActivity(new Intent(MainActivity.this,LoginPage.class));
+                finish();
+            }// To avoid the splash screen.
         },SPLASH_SCREEN);
     }
 }
