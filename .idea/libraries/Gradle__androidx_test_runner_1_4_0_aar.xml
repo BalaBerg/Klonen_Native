@@ -4,22 +4,23 @@
       <root url="jar://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/res" />
       <root url="file://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/res" />
-      <root url="file://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/res" />
+      <root url="file://$USER_HOME$/Functional Trails/caches/transforms-3/a431c0dd856183e5349ff3d5398c248c/transformed/runner-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b93751a24c69e69e0a3a01bda97dc08b/transformed/runner-1.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b93751a24c69e69e0a3a01bda97dc08b/transformed/runner-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b93751a24c69e69e0a3a01bda97dc08b/transformed/runner-1.4.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/aee6a62a26d9b413dadc1732e66cc4ef3bcf9d61/runner-1.4.0-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/aee6a62a26d9b413dadc1732e66cc4ef3bcf9d61/runner-1.4.0-javadoc.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/aee6a62a26d9b413dadc1732e66cc4ef3bcf9d61/runner-1.4.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/aee6a62a26d9b413dadc1732e66cc4ef3bcf9d61/runner-1.4.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/11ef580a9f2ea2fba4d060a3121506197bd6b183/runner-1.4.0-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/11ef580a9f2ea2fba4d060a3121506197bd6b183/runner-1.4.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/11ef580a9f2ea2fba4d060a3121506197bd6b183/runner-1.4.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.test/runner/1.4.0/11ef580a9f2ea2fba4d060a3121506197bd6b183/runner-1.4.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

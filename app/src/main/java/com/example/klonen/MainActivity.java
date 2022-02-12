@@ -11,13 +11,17 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+
 public class MainActivity extends AppCompatActivity {
 
     // for Animation :
     private static final int SPLASH_SCREEN = 5000; // 5 sec
     Animation sp_anim;
     ImageView splash_img;
-
+    private FirebaseAuth mauth;
 
 
     @Override
@@ -36,9 +40,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Switch to New Page : after the Timeout ( Delay )
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this, LoginPage.class);
-            startActivity(intent);
-            finish(); // To avoid the splash screen.
+            mauth = FirebaseAuth.getInstance();
+            FirebaseUser currentUser = mauth.getCurrentUser();
+            if (currentUser != null){
+                startActivity(new Intent(MainActivity.this,Home.class));
+            }
+            else{
+                startActivity(new Intent(MainActivity.this,LoginPage.class));
+            }// To avoid the splash screen.
         },SPLASH_SCREEN);
     }
 }
