@@ -4,6 +4,7 @@
       <root url="jar://$USER_HOME$/Functional Trails/caches/transforms-3/19075c4677e37e538c54d7f745fc8af4/transformed/appcompat-1.4.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/Functional Trails/caches/transforms-3/19075c4677e37e538c54d7f745fc8af4/transformed/appcompat-1.4.1/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/Functional Trails/caches/transforms-3/19075c4677e37e538c54d7f745fc8af4/transformed/appcompat-1.4.1/jars/classes.jar!/" />
@@ -15,12 +16,16 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/res" />
+      <root url="file://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/transforms-3/daec56630d897aa40e0fc6356687505b/transformed/appcompat-1.4.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/Functional Trails/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Functional Trails/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.4.1/f9e48179ea0c6ac0080a277b9383f74523f56aa2/appcompat-1.4.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
