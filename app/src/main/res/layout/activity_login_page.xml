@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
 
                 android:clickable="true"
-                android:onClick="newPass"
+
 
 
                 android:text="@string/forget_pass"
@@ -166,7 +166,7 @@
                 android:text="@string/no_account"
                 android:textColor="#7e7e7e"
 
-                android:textSize="15sp"
+                android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="@id/guideline13"
                 app:layout_constraintTop_toTopOf="@id/guideline11" />
 
@@ -174,14 +174,15 @@
                 android:id="@+id/register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+
                 android:text="@string/reg"
 
-                android:clickable="true"
-                android:onClick="signUp"
 
                 android:textColor="#436cd9"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="@id/guideline14"
+                app:layout_constraintStart_toEndOf="@+id/account"
                 app:layout_constraintTop_toTopOf="@id/guideline11" />
 
             <TextView
@@ -199,28 +200,42 @@
                 app:layout_constraintStart_toStartOf="@id/guideline5"
                 app:layout_constraintTop_toBottomOf="@+id/register" />
 
-            <ImageView
-                android:id="@+id/fb"
-                android:layout_width="51dp"
-                android:layout_height="51dp"
-                android:src="@drawable/fb"
-                android:contentDescription="@null"
+            <LinearLayout
+                android:id="@+id/layout_gg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-
-                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintStart_toStartOf="@id/guideline13"
+                app:layout_constraintEnd_toEndOf="@id/guideline14"
                 app:layout_constraintTop_toTopOf="@id/guideline12"
-                />
+                android:gravity="center"
+                android:background="@drawable/social_button"
+                android:clickable="true"
 
-            <ImageView
-                android:id="@+id/gg"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/gg"
-                android:contentDescription="@null"
-                app:layout_constraintEnd_toEndOf="@id/guideline2"
-                app:layout_constraintTop_toTopOf="@id/guideline12"
+                >
 
-                />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/gg"
+                    android:padding="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Signin with Gmail"
+                    android:textColor="#7d7d7d"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
 
 
 

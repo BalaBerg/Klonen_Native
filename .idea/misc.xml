@@ -8,10 +8,15 @@
         <entry key="..\:/Users/tensorthug/AndroidStudioProjects/Klonen_3D/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/drawable/edit_button.xml" value="0.37083333333333335" />
         <entry key="app/src/main/res/drawable/edit_icon.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable/progress_bar.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable/progress_cir.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable/social_button.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.3546875" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.196875" />
         <entry key="app/src/main/res/layout/activity_login_page.xml" value="0.3546875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3546875" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33559782608695654" />
+        <entry key="app/src/main/res/layout/progress_bar.xml" value="0.3546875" />
       </map>
     </option>
   </component>
